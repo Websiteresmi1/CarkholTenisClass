@@ -1,20 +1,20 @@
 /**
- * Carkhol Class - Data Configuration
+ * Carkhol Tenis Class - Data Configuration
  * File data ini memuat seluruh informasi website (Paket, Jadwal, Pelatih, FAQ, Galeri, Artikel, Aturan)
  * untuk mempermudah update/maintenance tanpa mengubah file HTML utama.
  */
 
 const TENNIS_DATA = {
   academy: {
-    name: "Carkhol Class",
-    tagline: "Wujudkan Permainan Terbaikmu Bersama Pelatih Profesional",
+    name: "Carkhol Tenis Class",
+    tagline: "Wujudkan Permainan Terbaikmu Bersama Pelatih Badash",
     subtagline: "Program pelatihan tenis terstruktur dari level Pemula (Beginner) hingga Mahir (Advanced). Didampingi pelatih berlisensi nasional & internasional dengan fasilitas standar kompetisi.",
     phone: "6288989748299",
     phoneDisplay: "+62 889-8974-8299",
-    email: "info@carkholclass.id",
+    email: "rizaldymaulidanfirdaus@gmail.com",
     instagram: "@carkholclass.tennis",
     address: "Ace Tennis Center, Jl. Raya Sport Complex No. 88, Senayan, Jakarta Pusat",
-    operatingHours: "Sabtu & Minggu: 18:00 - 22:00 WIB",
+    operatingHours: "Sabtu & Minggu: 18.00 - 21.00 WIB",
     promoText: "🔥 DISKON EARLY BIRD 20% UNTUK PENDAFTARAN BULAN INI!",
     stats: {
       students: "1.200+",
@@ -26,17 +26,17 @@ const TENNIS_DATA = {
   },
 
   coach: {
-    name: "Coach Zaldy, S.Or, CPT",
-    title: "Head Coach & Founder Carkhol Class",
-    image: "assets/images/Zaldy.png",
-    certification: "ITF Level 2 Certified & PELTI Licensed Head Coach",
+    name: "Rizaldy Maulidan Firdaus",
+    title: "Head Coach & Founder Carkhol Tenis Class",
+    image: "assets/images/Profil Zaldy.png",
+    certification: "Badash & Pourkelapb Sadish",
     experience: "12+ Tahun Pengalaman Kepelatihan",
     bio: "Coach Zaldy memadukan pengalaman bertanding di tingkat nasional dengan pendekatan ilmiah modern berbasis bio-mekanika gerakan tenis dan ketahanan mental bertanding.",
     achievements: [
-      "Mantan Atlet Tenis Daerah & Medalis Kejurda",
-      "Sertifikasi Pelatih International Tennis Federation (ITF) Level 2",
-      "Pelatih Kepala Tim Yunior Jakarta (2018 - 2022)",
-      "Telah Melatih 800+ Peserta Privat & Klub"
+      "Medalis CHRISTOPHER RUNGKAT TENNIS GIRGUIT (TDP) 2018",
+      "Porprov 2019",
+      "Medalis Se-Madura 2017-2018",
+      "Medalis Tunggal & Ganda Se-Kabupaten Bangkalan 2016"
     ],
     philosophy: "Tenis bukan sekadar memukul bola, tapi harmoni antara fokus mental, efisiensi footwork, ketajaman taktik, dan disiplin tinggi."
   },
@@ -67,180 +67,74 @@ const TENNIS_DATA = {
 
   packages: [
     {
-      id: "pkg-trial",
-      name: "Trial Single Session",
-      badge: "Coba Gratis",
-      isPopular: false,
-      level: "Semua Level",
-      duration: "60 Menit",
-      sessions: "1 Sesi",
-      price: 400000,
-      priceFormatted: "Rp 400.000",
-      period: "per sesi",
-      features: [
-        "Sesi privat 1-on-1 untuk pengalaman pertama",
-        "Analisis cepat gaya main & potensi",
-        "Rekomendasi paket lanjutan dari coach",
-        "Gratis sewa raket & bola latihan",
-        "Diskon 20% jika daftar paket reguler"
-      ]
-    },
-    {
       id: "pkg-privat",
-      name: "Paket Privat 1-on-1",
+      name: "Paket Privat",
       badge: "Paling Intensif",
       isPopular: false,
       level: "Semua Level (Pemula - Mahir)",
-      duration: "60 Menit / Sesi",
-      sessions: "4 Sesi / Bulan",
-      price: 1500000,
-      priceFormatted: "Rp 1.500.000",
-      period: "per bulan",
+      duration: "120 Menit / Sesi",
+      sessions: "1x Pertemuan",
+      price: 200000,
+      priceFormatted: "Rp 200.000",
+      period: "Sesi",
       features: [
         "Pendampingan eksklusif 1 pelatih 1 peserta",
-        "Analisis video stroke & bio-mekanika",
-        "Modul latihan kustom sesuai target pribadi",
-        "Fasilitas penggunaan raket & bola latihan",
+        "Fasilitas penggunaan raket, bola latihan & BallBoys",
         "Gratis sewa lapangan per sesi",
-        "Laporan evaluasi perkembangan bulanan"
-      ]
-    },
-    {
-      id: "pkg-semiprivat",
-      name: "Paket Semi-Privat (2 Peserta)",
-      badge: "Rekomendasi Hemat",
-      isPopular: true,
-      level: "Pemula & Menengah",
-      duration: "90 Menit / Sesi",
-      sessions: "4 Sesi / Bulan",
-      price: 950000,
-      priceFormatted: "Rp 950.000",
-      period: "per orang / bulan",
-      features: [
-        "Satu pelatih untuk 2 orang (teman/pasangan)",
-        "Latihan sparring & game situation terarah",
-        "Durasi lebih panjang (90 menit per sesi)",
-        "Fasilitas peminjaman bola & alat pelatih",
-        "Gratis sewa lapangan",
-        "Konsultasi nutrisi & ketahanan fisik dasar"
+        "Evaluasi Setiap Sesi Latihan"
       ]
     },
     {
       id: "pkg-group",
-      name: "Paket Group Regular (4-6 Orang)",
+      name: "Re-Club",
       badge: "Seru & Komunitas",
       isPopular: false,
       level: "Pemula & Menengah",
       duration: "120 Menit / Sesi",
-      sessions: "4 Sesi / Bulan",
-      price: 600000,
-      priceFormatted: "Rp 600.000",
-      period: "per orang / bulan",
+      sessions: "1x Pertemuan",
+      price: 50000,
+      priceFormatted: "Rp 50.000",
+      period: "Sesi",
       features: [
         "Kelas grup interaktif & penuh energi",
         "Latihan drill stroke, rally, dan game ganda",
         "Relasi sosial baru sesama pecinta tenis",
         "Termasuk bola & raket pinjaman (jika belum ada)",
         "Gratis sewa lapangan",
-        "Sertifikasi kelulusan level"
-      ]
-    },
-    {
-      id: "pkg-junior",
-      name: "Paket Kids & Junior (Usia 6-15)",
-      badge: "Program Usia Dini",
-      isPopular: false,
-      level: "Pemula & Junior",
-      duration: "60 Menit / Sesi",
-      sessions: "4 Sesi / Bulan",
-      price: 750000,
-      priceFormatted: "Rp 750.000",
-      period: "per anak / bulan",
-      features: [
-        "Metode Red/Orange/Green Ball sesuai usia",
-        "Fokus koordinasi motorik, kelincahan & fun",
-        "Peralatan raket & bola khusus anak",
-        "Sertifikat apresiasi & minitournament fun",
-        "Gratis sewa lapangan",
-        "Pendampingan pelatih yang sabar & bersahabat"
-      ]
-    },
-    {
-      id: "pkg-intensive",
-      name: "Weekend Intensive Bootcamp",
-      badge: "Fast Track",
-      isPopular: false,
-      level: "Menengah & Mahir",
-      duration: "3 Jam / Sabtu & Minggu",
-      sessions: "Weekend Camp (2 Hari)",
-      price: 1200000,
-      priceFormatted: "Rp 1.200.000",
-      period: "per event bootcamp",
-      features: [
-        "Fast-track peningkatkan teknik serve & volley",
-        "Match play strategy & mental conditioning",
-        "Makan siang sehat & hydration pack gratis",
-        "Analisis taktik bertanding dengan pelatih",
-        "T-Shirt eksklusif Carkhol Class",
-        "High-definition video dokumentasi bertanding"
-      ]
-    },
-    {
-      id: "pkg-corporate",
-      name: "Corporate Team Building",
-      badge: "Korporat",
-      isPopular: false,
-      level: "Semua Level (Karyawan)",
-      duration: "120 Menit / Sesi",
-      sessions: "Fleksibel (Min. 8 Orang)",
-      price: 5000000,
-      priceFormatted: "Mulai Rp 5.000.000",
-      period: "per sesi kelompok",
-      features: [
-        "Paket khusus outing class untuk perusahaan",
-        "Materi teamwork, komunikasi & leadership di lapangan",
-        "Tournament internal antar divisi",
-        "Sertifikat partisipasi untuk setiap karyawan",
-        "Catering & voucher merch eksklusif",
-        "Koordinasi penuh dengan tim HR perusahaan"
       ]
     }
   ],
 
   schedules: [
-    { id: "sch-1", day: "Sabtu", time: "18:00 - 22:00 WIB", status: "Tersedia" },
-    { id: "sch-2", day: "Minggu", time: "18:00 - 22:00 WIB", status: "Tersedia" }
+    { id: "sch-1", day: "Sabtu", time: "18.00 - 21.00 WIB", status: "Tersedia" },
+    { id: "sch-2", day: "Minggu", time: "18.00 - 21.00 WIB", status: "Tersedia" }
   ],
 
   gallery: [
-    { id: 1, type: "image", category: "action", title: "Servis Bertenaga High Angle", src: "assets/images/dokumentasi.png" },
-    { id: 2, type: "image", category: "coach", title: "Instruksi Teknik Grip dari Coach Zaldy", src: "assets/images/Zaldy.png" },
-    { id: 3, type: "image", category: "court", title: "Fasilitas Lapangan Hardcourt Modern", src: "assets/images/court.png" },
-    { id: 4, type: "image", category: "group", title: "Keseruan Sesi Latihan Group Adult & Kids", src: "assets/images/group.png" },
-    { id: 5, type: "image", category: "action", title: "Drill Forehand Crosscourt", src: "assets/images/hero.png" },
-    { id: 6, type: "image", category: "court", title: "Pemandangan Lapangan Saat Golden Hour", src: "assets/images/court.png" },
-    { id: 7, type: "image", category: "action", title: "Latihan Volley di Net Area", src: "assets/images/dokumentasi.png" },
-    { id: 8, type: "image", category: "group", title: "Kelas Semi-Privat Seru", src: "assets/images/group.png" },
-    { id: 9, type: "image", category: "coach", title: "Video Analysis Bersama Coach Rina", src: "assets/images/Zaldy.png" },
-    { id: 10, type: "image", category: "action", title: "Match Play Akhir Pekan", src: "assets/images/hero.png" }
+    { id: 1, type: "image", category: "action", title: "Dokumentasi Latihan 1", src: "assets/images/Dokumentasi 1.png" },
+    { id: 2, type: "image", category: "coach", title: "Dokumentasi Latihan 2", src: "assets/images/Dokumentasi 2.png" },
+    { id: 3, type: "image", category: "court", title: "Dokumentasi Latihan 3", src: "assets/images/Dokumentasi 3.png" },
+    { id: 4, type: "image", category: "group", title: "Dokumentasi Latihan 4", src: "assets/images/Dokumentasi 4.png" },
+    { id: 5, type: "image", category: "action", title: "Dokumentasi Latihan 5", src: "assets/images/Dokumentasi 5.png" },
+    { id: 6, type: "image", category: "group", title: "Dokumentasi Latihan 6", src: "assets/images/Dokumentasi 6.png" }
   ],
 
   rules: [
     {
       title: "Ketentuan Pembayaran & Registrasi",
-      content: "Pembayaran biaya kelas dilakukan secara penuh di awal sebelum sesi pertama dimulai. Konfirmasi pendaftaran berlaku setelah bukti transfer diterima admin. Metode pembayaran mendukung Transfer Bank (BCA/Mandiri/BRI), QRIS, dan kartu kredit/debit (min. transaksi Rp 1.000.000)."
+      content: "Pembayaran biaya kelas dilakukan secara penuh di awal sebelum sesi pertama dimulai. Konfirmasi pendaftaran berlaku setelah bukti transfer diterima admin. Metode pembayaran mendukung Transfer Bank BCA, QRIS, Cash."
     },
     {
       title: "Kebijakan Reschedule & Pembatalan Sesi",
-      content: "Untuk kelas Privat & Semi-Privat, perubahan jadwal (reschedule) wajib diinfokan maksimal 24 jam sebelum sesi dimulai. Pembatalan mendadak kurang dari 6 jam dianggap sesi hangus (kecuali kendala cuaca buruk). Paket Bulanan memiliki ketentuan reschedule maksimal 2x per bulan."
+      content: "Untuk kelas Privat & Re-Club, perubahan jadwal (reschedule) wajib diinfokan maksimal 24 jam sebelum sesi dimulai. Pembatalan mendadak kurang dari 24 jam dianggap sesi hangus (kecuali kendala cuaca buruk)."
     },
     {
       title: "Tata Tertib Kehadiran & Keterlambatan",
-      content: "Peserta diharapkan hadir 10-15 menit sebelum waktu latihan untuk pemanasan mandiri. Waktu keterlambatan peserta tidak menambah durasi sesi latihan demi menjaga ketepatan jadwal peserta berikutnya. Jika keterlambatan lebih dari 20 menit, sesi dianggap hangus."
+      content: "Peserta diharapkan hadir 10-15 menit sebelum waktu latihan untuk pemanasan mandiri. Waktu keterlambatan peserta tidak menambah durasi sesi latihan demi menjaga ketepatan jadwal peserta berikutnya."
     },
     {
       title: "Perlengkapan yang Wajib Dibawa",
-      content: "Peserta wajib memakai sepatu tenis (court shoes khusus tenis), pakaian olahraga yang menyerap keringat, dan membawa handuk pribadi serta botol minum. Raket latihan disediakan gratis untuk pemula selama 2 sesi pertama. Untuk peserta berkelanjutan, disarankan memiliki raket sendiri sesuai rekomendasi coach."
+      content: "Peserta wajib memakai sepatu tenis (court shoes khusus tenis), pakaian olahraga yang menyerap keringat, dan membawa handuk pribadi serta botol minum. Raket latihan disediakan gratis untuk peserta yang tidak memiliki raket. Untuk peserta berkelanjutan, disarankan memiliki raket sendiri sesuai rekomendasi coach."
     },
     {
       title: "Kebijakan Cuaca Buruk (Force Majeure)",
@@ -248,14 +142,14 @@ const TENNIS_DATA = {
     },
     {
       title: "Kebijakan Privasi & Foto Kegiatan",
-      content: "Carkhol Class kadang-kadang mendokumentasikan kegiatan latihan untuk keperluan marketing dan media sosial. Foto/video peserta akan ditampilkan tanpa nama lengkap kecuali ada izin tertulis dari peserta atau orang tua/wali untuk peserta di bawah 18 tahun."
+      content: "Carkhol Tenis Class kadang-kadang mendokumentasikan kegiatan latihan untuk keperluan marketing dan media sosial. Foto/video peserta akan ditampilkan tanpa nama lengkap."
     }
   ],
 
   faqs: [
     {
       q: "Saya benar-benar pemula yang belum pernah pegang raket. Apakah bisa bergabung?",
-      a: "Sangat bisa! Lebih dari 60% murid Carkhol Class memulai dari nol. Kami menyediakan paket Privat & Semi-Privat khusus pemula dengan teknik dasar yang bertahap dan tidak intimidatif."
+      a: "Sangat bisa! Lebih dari 60% murid Carkhol Tenis Class memulai dari nol. Kami menyediakan paket Privat & Semi-Privat khusus pemula dengan teknik dasar yang bertahap dan tidak intimidatif."
     },
     {
       q: "Apakah saya harus membawa raket sendiri saat latihan pertama?",
@@ -295,7 +189,7 @@ const TENNIS_DATA = {
     {
       name: "Budi Santoso",
       role: "Pekerja Swasta (Level Pemula)",
-      text: "Sangat puas berlatih di Carkhol Class! Coach Zaldy sabar banget mengoreksi stroke saya. Dari yang tadinya bolanya suka out terus, sekarang sudah bisa rally 20x lancar!",
+      text: "Sangat puas berlatih di Carkhol Tenis Class! Coach Zaldy sabar banget mengoreksi stroke saya. Dari yang tadinya bolanya suka out terus, sekarang sudah bisa rally 20x lancar!",
       rating: 5,
       avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80"
     },
@@ -323,7 +217,7 @@ const TENNIS_DATA = {
     {
       name: "PT. Nusantara Digital",
       role: "Corporate Outing Client",
-      text: "Kami booking Corporate Team Building di Carkhol Class untuk outing kantor dan hasilnya超过预期! Tim HR dan karyawan semua happy. Turnamen internalnya bikin bonding lebih erat.",
+      text: "Kami booking Corporate Team Building di Carkhol Tenis Class untuk outing kantor dan hasilnya超过预期! Tim HR dan karyawan semua happy. Turnamen internalnya bikin bonding lebih erat.",
       rating: 5,
       avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&auto=format&fit=crop&q=80"
     }

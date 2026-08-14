@@ -1,12 +1,12 @@
 /**
- * Carkhol Class - Application Logic
+ * Carkhol Tenis Class - Application Logic
  * Menangani render dinamis, interaksi UI, form pendaftaran, WhatsApp redirect, Lightbox, dan Admin Panel.
  */
 
 document.addEventListener("DOMContentLoaded", () => {
   const data = window.TENNIS_DATA;
   if (!data) {
-    console.error("Data Carkhol Class tidak ditemukan!");
+    console.error("Data Carkhol Tenis Class tidak ditemukan!");
     return;
   }
 
@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
   renderRules(data.rules);
   renderFAQs(data.faqs);
   renderTestimonials(data.testimonials);
-  renderArticles(data.articles);
   populatePackageSelect(data.packages);
   populateScheduleSelect(data.schedules);
 
@@ -31,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setupAdminModal();
   setupScrollEffects();
 
-  console.log("Carkhol Class Web App Loaded Successfully.");
+  console.log("Carkhol Tenis Class Web App Loaded Successfully.");
 });
 
 // --- RENDER FUNCTIONS ---
@@ -64,13 +63,13 @@ function renderAcademyInfo(academy) {
   if (academy.phone) {
     const floatBtn = document.getElementById("floating-wa-btn");
     if (floatBtn) {
-      const msg = `Halo Admin ${academy.name || 'Carkhol Class'}, saya ingin tanya mengenai pendaftaran kelas tenis.`;
+      const msg = `Halo Admin ${academy.name || 'Carkhol Tenis Class'}, saya ingin tanya mengenai pendaftaran kelas tenis.`;
       floatBtn.href = `https://api.whatsapp.com/send?phone=${academy.phone}&text=${encodeURIComponent(msg)}`;
     }
 
     const heroBtn = document.getElementById("hero-wa-btn");
     if (heroBtn) {
-      const msg = `Halo Admin ${academy.name || 'Carkhol Class'}, saya ingin tanya-tanya mengenai kelas tenis.`;
+      const msg = `Halo Admin ${academy.name || 'Carkhol Tenis Class'}, saya ingin tanya-tanya mengenai kelas tenis.`;
       heroBtn.href = `https://api.whatsapp.com/send?phone=${academy.phone}&text=${encodeURIComponent(msg)}`;
     }
 
@@ -236,7 +235,7 @@ function populateScheduleSelect(schedules) {
   if (!select || !schedules) return;
   select.innerHTML = `<option value="" disabled selected>-- Pilih Jadwal & Hari Latihan --</option>` +
     schedules.map((sch) => `<option value="${sch.day} (${sch.time})">${sch.day} (${sch.time})</option>`).join("") +
-    `<option value="Sabtu & Minggu (18:00 - 22:00 WIB)">Sabtu & Minggu (18:00 - 22:00 WIB)</option>`;
+    `<option value="Sabtu & Minggu (18.00 - 21.00 WIB)">Sabtu & Minggu (18.00 - 21.00 WIB)</option>`;
 }
 
 function renderGallery(gallery) {
@@ -493,7 +492,7 @@ function setupRegistrationForm(adminPhone) {
     saveRegistrationToLocalStorage(regData);
 
     // Format WhatsApp Message
-    const rawTextMessage = `Halo Admin Carkhol Class! 👋\n\nSaya ingin mendaftar kelas pelatihan tenis dengan rincian berikut:\n\n👤 Nama: ${name}\n📱 No. WA: ${phoneClean}\n✉️ Email: ${email}\n🎂 Usia: ${age} Tahun\n🎾 Level Main: ${level}\n🏆 Paket Diinginkan: ${pkg}\n📅 Jadwal Pilihan: ${schedule}\n📝 Catatan: ${notes || "-"}\n\nMohon konfirmasi ketersediaan slot dan instruksi pembayaran selengkapnya. Terima kasih!`;
+    const rawTextMessage = `Halo Admin Carkhol Tenis Class! 👋\n\nSaya ingin mendaftar kelas pelatihan tenis dengan rincian berikut:\n\n👤 Nama: ${name}\n📱 No. WA: ${phoneClean}\n✉️ Email: ${email}\n🎂 Usia: ${age} Tahun\n🎾 Level Main: ${level}\n🏆 Paket Diinginkan: ${pkg}\n📅 Jadwal Pilihan: ${schedule}\n📝 Catatan: ${notes || "-"}\n\nMohon konfirmasi ketersediaan slot dan instruksi pembayaran selengkapnya. Terima kasih!`;
 
     const waUrl = `https://api.whatsapp.com/send?phone=${adminPhone}&text=${encodeURIComponent(rawTextMessage)}`;
 
