@@ -45,21 +45,21 @@ const TENNIS_DATA = {
     {
       name: "Coach Zaldy, S.Or, CPT",
       title: "Head Coach & Founder",
-      image: "assets/images/Zaldy.png",
+      image: "assets/images/zaldy.png",
       certification: "ITF Level 2 Certified",
       shortBio: "12+ tahun pengalaman, mantan atlet nasional"
     },
     {
       name: "Coach Rina, CPT",
       title: "Senior Coach - Junior Program",
-      image: "assets/images/Zaldy.png",
+      image: "assets/images/zaldy.png",
       certification: "ITF Level 1 Certified",
       shortBio: "Spesialis program usia dini yang sabar & menyenangkan"
     },
     {
       name: "Coach Andi",
       title: "Performance Coach - Adult Competitive",
-      image: "assets/images/Zaldy.png",
+      image: "assets/images/zaldy.png",
       certification: "Former National Player & ITF Level 1",
       shortBio: "Mantan pemain nasional, spesialis match strategy"
     }
@@ -246,7 +246,7 @@ const TENNIS_DATA = {
       date: "24 Juli 2026",
       readTime: "6 min baca",
       summary: "Ketenangan di poin-poin krusial membedakan pemain biasa dengan pemenang. Simak 3 teknik pernapasan dan fokus visual antara poin.",
-      image: "assets/images/Zaldy.png"
+      image: "assets/images/zaldy.png"
     },
     {
       id: 4,
