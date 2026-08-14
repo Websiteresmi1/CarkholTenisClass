@@ -89,7 +89,7 @@ function renderCoachInfo(coach) {
     imgEl.src = coach.image;
     imgEl.onerror = () => {
       imgEl.onerror = null;
-      imgEl.src = "assets/images/coach.png";
+      imgEl.src = "assets/images/zaldy.png";
     };
   }
 
