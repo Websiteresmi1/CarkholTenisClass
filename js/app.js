@@ -226,7 +226,7 @@ function renderSchedule(schedules) {
             <span class="time-text">${sch.time}</span>
           </div>
           <div class="court-info">
-            <span>🏟️ Lapangan Utama Carkhol Tennis Stadium</span>
+            <span>🏟️ Lapangan Semi Indoor Bangkalan</span>
             <span>💡 Sesi Malam Floodlight (Lampu Lapangan)</span>
           </div>
         </div>
