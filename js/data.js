@@ -13,6 +13,8 @@ const TENNIS_DATA = {
     phoneDisplay: "+62 889-8974-8299",
     email: "rizaldymaulidanfirdaus@gmail.com",
     instagram: "@carkholclass.tennis",
+    instagramUrl: "https://www.instagram.com/carkhol_tenis?igsh=MWxvOTM2bjE4Z2R5Nw%3D%3D&utm_source=qr",
+    tiktokUrl: "https://www.tiktok.com/@carkhol_tenis",
     address: "Jl. Halim Perdana Kusuma No.1, Area Sawah/Kebun, Bilaporah, Kec. Socah, Kabupaten Bangkalan, Jawa Timur 69116",
     mapsUrl: "https://maps.app.goo.gl/7e6M4g6CWLcCTeWE6?g_st=ic",
     operatingHours: "Sabtu & Minggu: 18.00 - 21.00 WIB",

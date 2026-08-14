@@ -79,6 +79,17 @@ function renderAcademyInfo(academy) {
       contactBtn.innerHTML = `💬 Chat via WhatsApp (${academy.phoneDisplay || academy.phone})`;
     }
   }
+
+  // Synchronize Instagram & TikTok Floating Links
+  const floatIgBtn = document.getElementById("floating-ig-btn");
+  if (floatIgBtn && (academy.instagramUrl || academy.instagram)) {
+    floatIgBtn.href = academy.instagramUrl || `https://instagram.com/${academy.instagram.replace('@', '')}`;
+  }
+
+  const floatTiktokBtn = document.getElementById("floating-tiktok-btn");
+  if (floatTiktokBtn && academy.tiktokUrl) {
+    floatTiktokBtn.href = academy.tiktokUrl;
+  }
 }
 
 function renderCoachInfo(coach) {
