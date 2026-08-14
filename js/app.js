@@ -82,8 +82,8 @@ function renderAcademyInfo(academy) {
 
   // Synchronize Instagram & TikTok Floating Links
   const floatIgBtn = document.getElementById("floating-ig-btn");
-  if (floatIgBtn && (academy.instagramUrl || academy.instagram)) {
-    floatIgBtn.href = academy.instagramUrl || `https://instagram.com/${academy.instagram.replace('@', '')}`;
+  if (floatIgBtn && (academy.instagram2Url || academy.instagramUrl || academy.instagram)) {
+    floatIgBtn.href = academy.instagram2Url || academy.instagramUrl || `https://instagram.com/${(academy.instagram2 || academy.instagram).replace('@', '')}`;
   }
 
   const floatTiktokBtn = document.getElementById("floating-tiktok-btn");
