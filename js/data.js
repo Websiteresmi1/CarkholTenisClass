@@ -14,6 +14,7 @@ const TENNIS_DATA = {
     email: "rizaldymaulidanfirdaus@gmail.com",
     instagram: "@carkholclass.tennis",
     address: "Jl. Halim Perdana Kusuma No.1, Area Sawah/Kebun, Bilaporah, Kec. Socah, Kabupaten Bangkalan, Jawa Timur 69116",
+    mapsUrl: "https://maps.app.goo.gl/7e6M4g6CWLcCTeWE6?g_st=ic",
     operatingHours: "Sabtu & Minggu: 18.00 - 21.00 WIB",
     promoText: "🔥 DISKON EARLY BIRD 20% UNTUK PENDAFTARAN BULAN INI!",
     stats: {
