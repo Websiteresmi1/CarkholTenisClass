@@ -13,7 +13,7 @@ const TENNIS_DATA = {
     phoneDisplay: "+62 889-8974-8299",
     email: "rizaldymaulidanfirdaus@gmail.com",
     instagram: "@carkholclass.tennis",
-    address: "Ace Tennis Center, Jl. Raya Sport Complex No. 88, Senayan, Jakarta Pusat",
+    address: "Jl. Halim Perdana Kusuma No.1, Area Sawah/Kebun, Bilaporah, Kec. Socah, Kabupaten Bangkalan, Jawa Timur 69116",
     operatingHours: "Sabtu & Minggu: 18.00 - 21.00 WIB",
     promoText: "🔥 DISKON EARLY BIRD 20% UNTUK PENDAFTARAN BULAN INI!",
     stats: {
@@ -161,7 +161,7 @@ const TENNIS_DATA = {
     },
     {
       q: "Di mana lokasi lapangan tempat latihan diadakan?",
-      a: "Latihan berpusat di Ace Tennis Center, Senayan, Jakarta Pusat. Kami memiliki fasilitas 2 outdoor hardcourt dan 2 indoor court berstandar kompetisi."
+      a: "Latihan berpusat di Jl. Halim Perdana Kusuma No.1, Area Sawah/Kebun, Bilaporah, Kec. Socah, Kabupaten Bangkalan, Jawa Timur 69116."
     },
     {
       q: "Apakah ada opsi pembayaran cicilan atau bayar per sesi?",
