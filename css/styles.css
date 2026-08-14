@@ -1583,59 +1583,62 @@ textarea.form-control {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  z-index: 900;
+  z-index: 999;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.2));
 }
 
 .floating-social-btn {
-  width: 56px;
-  height: 56px;
+  width: 60px;
+  height: 60px;
   border-radius: var(--radius-full);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all var(--transition-fast);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
   text-decoration: none;
   position: relative;
+  border: 2px solid rgba(255, 255, 255, 0.35);
 }
 
 .floating-social-btn:hover {
-  transform: translateY(-4px) scale(1.08);
+  transform: translateY(-6px) scale(1.12);
 }
 
 .floating-btn-tiktok {
-  background-color: #000000;
+  background: radial-gradient(circle at 30% 30%, #222222 0%, #000000 100%);
   color: #FFFFFF;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.55), inset 0 2px 2px rgba(255, 255, 255, 0.3);
 }
 
 .floating-btn-tiktok:hover {
-  box-shadow: 0 12px 25px rgba(254, 44, 85, 0.45), 0 0 15px rgba(37, 244, 238, 0.35);
+  box-shadow: 0 16px 32px rgba(254, 44, 85, 0.5), 0 0 20px rgba(37, 244, 238, 0.4), inset 0 2px 2px rgba(255, 255, 255, 0.5);
   border-color: #FE2C55;
 }
 
 .floating-btn-instagram {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   color: #FFFFFF;
-  box-shadow: 0 8px 20px rgba(214, 36, 159, 0.4);
+  box-shadow: 0 10px 25px rgba(214, 36, 159, 0.5), inset 0 2px 2px rgba(255, 255, 255, 0.4);
 }
 
 .floating-btn-instagram:hover {
-  box-shadow: 0 12px 25px rgba(214, 36, 159, 0.65);
+  box-shadow: 0 16px 32px rgba(214, 36, 159, 0.75), inset 0 2px 2px rgba(255, 255, 255, 0.6);
+  border-color: #FFFFFF;
 }
 
 .floating-btn-wa {
-  background-color: #25D366;
+  background: radial-gradient(circle at 30% 30%, #34e776 0%, #25D366 100%);
   color: #FFFFFF;
-  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.5), inset 0 2px 2px rgba(255, 255, 255, 0.4);
 }
 
 .floating-btn-wa:hover {
-  box-shadow: 0 12px 25px rgba(37, 211, 102, 0.65);
+  box-shadow: 0 16px 32px rgba(37, 211, 102, 0.75), inset 0 2px 2px rgba(255, 255, 255, 0.6);
+  border-color: #FFFFFF;
 }
 
 .floating-wa-badge {
@@ -1653,6 +1656,7 @@ textarea.form-control {
   align-items: center;
   justify-content: center;
   border: 2px solid #FFFFFF;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 /* Admin Registrations Modal / Drawer */
