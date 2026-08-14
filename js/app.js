@@ -85,7 +85,13 @@ function renderCoachInfo(coach) {
   if (!coach) return;
 
   const imgEl = document.getElementById("coach-img");
-  if (imgEl && coach.image) imgEl.src = coach.image;
+  if (imgEl && coach.image) {
+    imgEl.src = coach.image;
+    imgEl.onerror = () => {
+      imgEl.onerror = null;
+      imgEl.src = "assets/images/coach.png";
+    };
+  }
 
   const nameEl = document.getElementById("coach-name");
   if (nameEl && coach.name) nameEl.textContent = coach.name;
