@@ -29,7 +29,7 @@ const TENNIS_DATA = {
   coach: {
     name: "Rizaldy Maulidan Firdaus",
     title: "Head Coach & Founder Carkhol Tenis Class",
-    image: "assets/images/zaldy.png?v=2",
+    image: "assets/images/Profil Coach.png",
     certification: "Badash & Pourkelapb Sadish",
     experience: "12+ Tahun Pengalaman Kepelatihan",
     bio: "Coach Zaldy memadukan pengalaman bertanding di tingkat nasional dengan pendekatan ilmiah modern berbasis bio-mekanika gerakan tenis dan ketahanan mental bertanding.",
